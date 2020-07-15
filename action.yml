@@ -1,0 +1,16 @@
+name: 'Huy Do'
+description: 'Test Custom Github Action'
+#env:
+  #SECRET: ${{ secrets.PASSPHRASE }}
+
+inputs:
+  secret:  # id of input
+    description: 'Secret'
+    default: "SECRET"
+outputs:
+  result: # id of output
+    description: 'Result of the action'
+runs:
+  using: 'node12'
+  main: 'index.js'
+
